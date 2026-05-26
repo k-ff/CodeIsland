@@ -1303,7 +1303,6 @@ final class AppState {
                     descriptions: optionDescs,
                     header: header
                 )
-                let trimmedHeader = header?.trimmingCharacters(in: .whitespacesAndNewlines)
                 // Claude Code's mapToolResultToToolResultBlockParam looks up answers by
                 // question text: `answers[question.question]`. Using header as the key
                 // causes a mismatch and all answers arrive as empty strings.
